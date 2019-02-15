@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Instagram Feed with Bootstrap</title>
+  </head>
+  <body>
+    
+      <nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand" href="#">
+      <img src="https://png.pngtree.com/svg/20170809/instagram_1058140.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    </a>
+  <form class="form-inline">
+  <div class="btn-group">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+    Create New Post
+          </button>
+    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-cog"></i>
+    </button>
+    <div class="dropdown-menu">
+      <ul>Profile</ul>
+      <ul>My Account</ul>
+      <ul>Settings</ul>
+    </div>
+  </div>
+    </form>
+  </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Create New Post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          Write something here...
+      </div>
+      <div class="modal-footer">
+         <i class="float-left fas fa-camera"></i>
+         <i class="fas fa-map-pin" "icon-move-left"></i>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image and text -->
+<div class="container-fluid px-0">
+
+    <ul class="nav nav-pills justify-content-center bg-alert p-2" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fal fa-square"></i></a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active bg-light" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      
+      <div class="row no-gutters py-1 px-1">
+          <div class="col-4">
+              <div class="post-img" style="background-image:url(https://wallpapercave.com/wp/wp2107786.jpg);">
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="post-img" style="background-image:url(https://wallpapermemory.com/uploads/343/greyhound-wallpaper-hd-2560x1600-259197.jpg);">
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="post-img" style="background-image:url(https://wallpapermemory.com/uploads/258/greyhound-background-hd-1920x1200-259205.jpg);">
+          </div>
+          </div>
+      </div>
+      
+          <div class="row no-gutters py-1 px-1">
+              <div class="col-4">
+                  <div class="post-img" style="background-image:url(https://wallpapercave.com/wp/wp2107857.jpg);">
+                    </div>  
+              </div>
+              <div class="col-4">
+                  <div class="post-img" style="background-image:url(https://wallpapermemory.com/uploads/741/greyhound-wallpaper-1080p-259203.jpg);">
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="post-img" style="background-image:url(http://s1.1zoom.net/big0/80/419995-Kycb.jpg);">
+                      </div>
+              </div>
+          </div>
+          
+          <div class="row no-gutters py-1 px-1">
+              <div class="col-4">
+                  <div class="post-img" style="background-image:url(https://cdn.allwallpaper.in/wallpapers/2000x1333/3538/bus-greyhound-2000x1333-wallpaper.jpg);">
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="post-img" style="background-image:url(https://i.pinimg.com/originals/34/28/cb/3428cb64d6abc637353046bff4c339f2.jpg);">
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="post-img" style="background-image:url(http://animalsbirds.com/wp-content/uploads/2017/03/Pretty-Greyhound-dog-animals-hd-wallpapers.jpg);">
+                  </div>
+              </div>
+          </div>
+    </div>
+  <div class="tab-pane fade bg-light" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="row justify-content-center px-3" style="margin-right: 0px; margin-left: 0px;">
+          <div class="col-12 col-md-6">
+                  
+                  <div class="row py-3">
+                  
+    
+                       <div class="col-12 mb-3">
+                          <div class="bg-white">
+                            <div class="row">
+                               <div class="col-5 p-3">
+                                  <h4>Action Shot</h4> 
+                               </div> 
+                            </div>
+                            <img class="img-fluid" src="https://wallpapercave.com/wp/wp2107786.jpg">
+                            <div class="row">
+                                <div class="col-12 py-2">
+                                    <p>This is my second picture of greyhounds.</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                       
+                       
+                       
+                       
+                       
+                        <div class="col-12 mb-3">
+                          <div class="bg-white">
+                            <div class="row">
+                               <div class="col-5 p-3">
+                                  <h4>Looking into the Distance</h4> 
+                               </div> 
+                            </div>
+                            <img class="img-fluid" src="https://wallpapermemory.com/uploads/343/greyhound-wallpaper-hd-2560x1600-259197.jpg">
+                            <div class="row">
+                                <div class="col-12 py-2">
+                                    <p>This is my second picture of greyhounds.</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                  
+                  
+                  <div class="col-12 mb-3">
+                    <div class="bg-white">
+                        <div class="row">
+                           <div class="col-5 p-3">
+                              <h4>Loungin'</h4> 
+                           </div> 
+                        </div>
+                        <img class="img-fluid" src="https://wallpapermemory.com/uploads/258/greyhound-background-hd-1920x1200-259205.jpg">
+                        <div class="row">
+                            <div class="col-12 py-2">
+                                <p>This is my third picture of greyhounds.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                 
+
+                    <div class="col-12 mb-3">
+                       <div class="bg-white">   
+                          <div class="row">
+                             <div class="col-5 p-3">
+                                <h4>The Pups</h4> 
+                             </div> 
+                          </div>
+                          <img class="img-fluid" src="https://wallpapercave.com/wp/wp2107857.jpg">
+                          <div class="row">
+                              <div class="col-12 py-2">
+                                  <p>This is my fourth picture of greyhounds.</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+      </div>
+      </div>
+    </div>
+</div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+  </body>
+</html>
